@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- App Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMI Calculator"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="10dp" />
+
+        <!-- Loan Amount -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Amount"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/principalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="numberDecimal"
+            android:hint="Enter principal amount"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000" />
+
+        <!-- Interest Rate -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interest Rate (%)"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/interestRate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="numberDecimal"
+            android:hint="Enter interest rate"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000" />
+
+        <!-- Loan Tenure -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Tenure (in months)"
+            android:textStyle="bold"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/loanTenure"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:hint="Enter loan tenure"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000" />
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate EMI"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp" />
+
+        <!-- Result Display -->
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your EMI will appear here"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:paddingTop="10dp" />
+
+    </LinearLayout>
+</ScrollView>

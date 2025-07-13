@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">EMI Calculator</string>
+    <string name="emi_calculator">EMI Calculator</string>
+
+    <!-- Labels -->
+    <string name="loan_amount_label">Loan Amount (Principal):</string>
+    <string name="interest_rate_label">Annual Interest Rate (%):</string>
+    <string name="loan_tenure_label">Loan Tenure (Months):</string>
+
+    <!-- Hints -->
+    <string name="hint_principal_amount">Enter Loan Amount</string>
+    <string name="hint_interest_rate">Enter Interest Rate</string>
+    <string name="hint_loan_tenure">Enter Loan Tenure</string>
+
+    <!-- Buttons -->
+    <string name="calculate_emi">Calculate EMI</string>
+
+    <!-- Results -->
+    <string name="default_result">Your Monthly EMI will appear here</string>
+    <string name="emi_result">Your Monthly EMI: %.2f</string>
+
+    <!-- Errors -->
+    <string name="error_positive_numbers">Please enter valid positive numbers</string>
+    <string name="error_fill_fields">Please fill all fields correctly</string>
+</resources>
